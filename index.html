@@ -74,7 +74,7 @@
 
             <div class="mt-3 relative">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-                <input type="text" id="search-input" onkeyup="filterProducts()" placeholder="Buscar: Tela Suplex 30 en 1, Tela Suplex 40 en 1, Tela Suplex 70 en 1 o hilos..." 
+                <input type="text" id="search-input" onkeyup="filterProducts()" placeholder="Buscar: Tela Suplex 30 en 1, Tela Suplex 40 en 1 o Tela Suplex 70 en 1..." 
                     class="w-full pl-10 pr-4 py-2 bg-navy-950/60 border border-slate-700/60 rounded-xl text-xs sm:text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:border-tealAccent-400 transition">
             </div>
         </div>
@@ -244,12 +244,12 @@
         </details>
 
         <div class="flex items-center justify-end mb-2">
-            <span class="text-xs text-slate-500 font-medium" id="product-count">Mostrando 4 productos</span>
+            <span class="text-xs text-slate-500 font-medium" id="product-count">Mostrando 3 productos</span>
         </div>
     </section>
 
     <main id="catalogo" class="w-full max-w-[1400px] mx-auto px-6 py-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full" id="products-container">
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-8 w-full" id="products-container">
         <!-- Dynamic Cards -->
     </div>
 </main>
@@ -281,7 +281,7 @@
                             <i class="fa-solid fa-building text-tealAccent-600"></i> Punto de Venta Principal
                         </h4>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            Pasaje Precolación 144 (La Altarjea), El Agustino, Lima, Perú.
+                            Pasaje Precolación Nº 144, El Agustino, Lima, Perú.
                         </p>
                         <div class="space-y-2 text-xs">
                             <div class="flex items-center text-slate-700 gap-2">
@@ -295,18 +295,17 @@
                         </div>
                     </div>
                     <div class="pt-3 border-t border-slate-200">
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Pasaje+Precolaci%C3%B3n+144%2C+La+Altargea%2C+El+Agustino%2C+Lima%2C+Per%C3%BA" target="_blank" rel="noopener" class="w-full bg-navy-900 hover:bg-slate-800 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition">
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=-12.03473116147551%2C-76.98730127148822" target="_blank" rel="noopener" class="w-full bg-navy-900 hover:bg-slate-800 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition">
                             <i class="fa-solid fa-diamond-turn-right text-tealAccent-400"></i>
                             <span>Cómo llegar con GPS</span>
                         </a>
                     </div>
                 </div>
                 
-                <!-- AQUÍ CAMBIAMOS h-80 lg:h-auto min-h-[320px] POR h-[420px] lg:h-[450px] -->
                 <div class="lg:col-span-2 h-[420px] lg:h-[450px] w-full">
                     <iframe
                         class="w-full h-full border-0"
-                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d258.38513264230573!2d-76.98727195525463!3d-12.034611107963702!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1791049713960!5m2!1ses!2spe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.88297885771846!2d-76.98730127148822!3d-12.03473116147551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5de21b52ecd%3A0xd08f146454758f52!2sCalle%20Coloracion%20Mz.K%20-%20Lt.15%2C%20El%20Agustino%2015008!5e0!3m2!1ses!2spe!4v1791514125995!5m2!1ses!2spe"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="strict-origin-when-cross-origin">
@@ -574,7 +573,7 @@
                 pricePerKg: 22.00,
                 rollPricePerKg: 20.00,
                 unitMeasure: 'Kg',
-                yieldMetresPerKg: 'Por confirmar',
+                yieldMetresPerKg: '3.1 metros / Kg',
                 width: '1.60 Metros (Tubular)',
                 grammage: '180 - 200 gr/m²',
                 description: 'Tela Suplex de menor gramaje con tacto suave y ventilación avanzada. Ideal para la confección de camisetas de fútbol, polos de entrenamiento, tops ligeros y ropa fitness veraniega.',
@@ -595,7 +594,7 @@
                 pricePerKg: 22.00,
                 rollPricePerKg: 20.00,
                 unitMeasure: 'Kg',
-                yieldMetresPerKg: 'Por confirmar',
+                yieldMetresPerKg: '2.4 metros / Kg',
                 width: '1.55 Metros',
                 grammage: '240 - 260 gr/m²',
                 description: 'El titulaje rey de la confección deportiva. Equilibrio perfecto entre densidad, alta elasticidad y cero transparencia. Diseñado para leggings de gimnasio, bikers y tops deportivos de alta contención.',
@@ -627,26 +626,6 @@
                     use: 'Leggings de alta compresión, fajas deportivas, casacas fitness',
                     rollWeight: 'Aprox. 20 a 22 Kg por rollo'
                 }
-            },
-            {
-                id: 'hilos-texturizados',
-                code: '',
-                title: 'Hilos 150D / 144 filamentos',
-                category: 'Hilos',
-                subtitle: 'Calibre 150D',
-                pricePerKg: null,
-                unitMeasure: 'Cono',
-                yieldMetresPerKg: 'Por confirmar',
-                width: '150D',
-                grammage: '144 filamentos',
-                description: 'Hilo de calibre 150D y 144 filamentos. Otros datos técnicos por confirmar.',
-                image: 'HILOS.png',
-                colors: availableColors,
-                specs: {
-                    composition: 'Por confirmar',
-                    use: 'Por confirmar',
-                    rollWeight: 'Por confirmar'
-                }
             }
         ];
 
@@ -657,6 +636,7 @@
 
         window.onload = () => {
             renderProducts(products);
+            updateCartUI();
             initializeCarousels();
         };
 // AQUI IMAGENES DEL BANNER
@@ -880,6 +860,19 @@
             return true;
         }
 
+        function addProductFromEmptyCart() {
+            const productId = document.getElementById('empty-cart-product').value;
+            const color = document.getElementById('empty-cart-color').value;
+            const qty = Number(document.getElementById('empty-cart-qty').value);
+
+            if (!Number.isInteger(qty) || qty < 1) {
+                alert('Ingresa una cantidad válida de al menos 1 Kg.');
+                return;
+            }
+
+            addProductToCart(productId, qty, color);
+        }
+
         function addCurrentDetailToCart() {
             const qty = parseInt(document.getElementById('detail-qty-input').value) || 1;
             addProductToCart(currentActiveProductId, qty, selectedColorInModal);
@@ -907,9 +900,32 @@
 
             if (cart.length === 0) {
                 container.innerHTML = `
-                    <div class="text-center py-12 text-slate-400">
-                        <i class="fa-solid fa-basket-shopping text-4xl mb-2 text-slate-300"></i>
-                        <p class="text-xs font-medium">El carrito de telas está vacío</p>
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+                        <div class="text-center">
+                            <i class="fa-solid fa-basket-shopping text-3xl mb-2 text-slate-300"></i>
+                            <p class="text-sm font-bold text-slate-700">Tu carrito está vacío</p>
+                            <p class="text-xs text-slate-500 mt-1">Elige una tela, un color y la cantidad para agregarla.</p>
+                        </div>
+                        <div>
+                            <label for="empty-cart-product" class="block text-xs font-medium text-slate-600 mb-1">Tipo de tela</label>
+                            <select id="empty-cart-product" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg bg-white focus:ring-2 focus:ring-tealAccent-500 focus:outline-none">
+                                ${products.map(product => `<option value="${product.id}">${product.title}</option>`).join('')}
+                            </select>
+                        </div>
+                        <div>
+                            <label for="empty-cart-color" class="block text-xs font-medium text-slate-600 mb-1">Color</label>
+                            <select id="empty-cart-color" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg bg-white focus:ring-2 focus:ring-tealAccent-500 focus:outline-none">
+                                ${paletteColors.map(color => `<option value="${color.name}">${color.name}</option>`).join('')}
+                            </select>
+                        </div>
+                        <div>
+                            <label for="empty-cart-qty" class="block text-xs font-medium text-slate-600 mb-1">Cantidad (Kg)</label>
+                            <input id="empty-cart-qty" type="number" min="1" step="1" value="1" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg bg-white focus:ring-2 focus:ring-tealAccent-500 focus:outline-none">
+                        </div>
+                        <button type="button" onclick="addProductFromEmptyCart()" class="w-full bg-navy-900 hover:bg-slate-800 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-cart-plus text-tealAccent-400"></i>
+                            Agregar al carrito
+                        </button>
                     </div>
                 `;
             } else {
@@ -1092,7 +1108,7 @@
                 contact: {
                     title: 'Contacto',
                     icon: 'fa-address-book',
-                    content: '<div class="space-y-4"><p>Para cualquier duda o consulta, comunícate con nosotros.</p><a href="mailto:gsjavierarmando@gmail.com" class="flex items-center gap-2 text-tealAccent-700 font-bold hover:text-tealAccent-800"><i class="fa-solid fa-envelope"></i> gsjavierarmando@gmail.com</a><a href="https://wa.me/51999111267" target="_blank" rel="noopener" class="flex items-center gap-2 text-slate-700"><i class="fa-brands fa-whatsapp text-emerald-600"></i> +51 999 111 267</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Pasaje+Precolaci%C3%B3n+144%2C+La+Altargea%2C+El+Agustino%2C+Lima%2C+Per%C3%BA" target="_blank" rel="noopener" class="flex items-center gap-2 text-tealAccent-700 font-bold"><i class="fa-solid fa-location-dot"></i> Pasaje Precolación 144, El Agustino</a></div>'
+                    content: '<div class="space-y-4"><p>Para cualquier duda o consulta, comunícate con nosotros.</p><a href="mailto:gsjavierarmando@gmail.com" class="flex items-center gap-2 text-tealAccent-700 font-bold hover:text-tealAccent-800"><i class="fa-solid fa-envelope"></i> gsjavierarmando@gmail.com</a><a href="https://wa.me/51999111267" target="_blank" rel="noopener" class="flex items-center gap-2 text-slate-700"><i class="fa-brands fa-whatsapp text-emerald-600"></i> +51 999 111 267</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=-12.03473116147551%2C-76.98730127148822" target="_blank" rel="noopener" class="flex items-center gap-2 text-tealAccent-700 font-bold"><i class="fa-solid fa-location-dot"></i> Pasaje Precolación Nº 144, El Agustino</a></div>'
                 }
             }[type];
 
